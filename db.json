@@ -1,0 +1,25 @@
+{
+    "categories": [
+        {"id": 1, "name": "electronics"},
+        {"id": 2, "name": "jewelery"},
+        {"id": 3, "name": "men's clothing"},
+        {"id": 4, "name": "women's clothing"}
+    ],
+    "products": [
+        {"id": 1, "name": "Product 1", "desc": "Description 1", "categoryId": 1},
+        {"id": 2, "name": "Product 2", "desc": "Description 2", "categoryId": 1},
+        {"id": 3, "name": "Product 3", "desc": "Description 3", "categoryId": 2},
+        {"id": 4, "name": "Product 4", "desc": "Description 4", "categoryId": 2},
+        {"id": 5, "name": "Product 5", "desc": "Description 5", "categoryId": 2},
+        {"id": 6, "name": "Product 6", "desc": "Description 6", "categoryId": 3},
+        {"id": 7, "name": "Product 7", "desc": "Description 7", "categoryId": 4},
+        {"id": 8, "name": "Product 8", "desc": "Description 8", "categoryId": 3},
+        {"id": 9, "name": "Product 9", "desc": "Description 9", "categoryId": 3},
+        {"id": 10, "name": "Product 10", "desc": "Description 10", "categoryId": 2},
+        {"id": 11, "name": "Product 11", "desc": "Description 11", "categoryId": 2},
+        {"id": 12, "name": "Product 12", "desc": "Description 12", "categoryId": 4},
+        {"id": 13, "name": "Product 13", "desc": "Description 13", "categoryId": 1},
+        {"id": 14, "name": "Product 14", "desc": "Description 14", "categoryId": 1},
+        {"id": 15, "name": "Product 15", "desc": "Description 15", "categoryId": 2}
+    ]
+}
