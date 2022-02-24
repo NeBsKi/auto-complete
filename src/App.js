@@ -12,12 +12,12 @@ const App = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    _loadCategories();
+    loadCategories();
   }, []);
 
-  const handleOnChange = debounce((search) => _loadCategories(search));
+  const handleOnChange = debounce((search) => loadCategories(search));
 
-  const _loadCategories = (searchTerm = "") => {
+  const loadCategories = (searchTerm = "") => {
     const params = {name_like: searchTerm};
     loadData(params, endpoints.GET_CATEGORIES)
       .then(categories => {
@@ -27,7 +27,7 @@ const App = () => {
       .catch(error => {throw new Error(error)});
   }
 
-  const _loadProducts = (id = "") => {
+  const loadProducts = (id = "") => {
     const params = {categoryId: id};
     loadData(params, endpoints.GET_PRODUCTS)
       .then(products => setProducts(products))
@@ -57,7 +57,7 @@ const App = () => {
       <AutoComplete
         options={categories}
         onSearch={handleOnChange}
-        onChange={_loadProducts}
+        onChange={loadProducts}
       />
       <ProductsList
         products={products}
